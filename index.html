@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Luta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Tela inicial -->
+    <div id="startScreen">
+        <h1>Nome do Jogo</h1>
+        <input type="text" id="playerName" placeholder="Seu Nome">
+        <button id="startButton">Start</button>
+    </div>
+
+    <!-- Tela de jogo -->
+    <div id="gameScreen" style="display: none;">
+        <h2 id="playerNameDisplay"></h2>
+        <p id="playerHealthDisplay"></p>
+        <p id="makimaHealthDisplay"></p>
+        <button id="attackButton">Atacar</button>
+    </div>
+
+    <!-- Tela de vitória -->
+    <div id="victoryScreen" style="display: none;">
+        <h2>Você Venceu!</h2>
+        <!-- Conteúdo da tela de vitória -->
+    </div>
+
+    <!-- Tela de derrota -->
+    <div id="defeatScreen" style="display: none;">
+        <h2>Você Perdeu!</h2>
+        <!-- Conteúdo da tela de derrota -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
