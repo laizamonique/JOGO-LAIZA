@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Tela inicial -->
+   <!-- Tela inicial -->
     <div id="startScreen">
         <h1>Bem-vindo ao Chainsaw man final battle</h1>
         <input type="text" id="playerName" placeholder="Seu Nome">
         <button id="startButton">Start</button>
     </div>
-
+<canvas id="gameCanvas" width="600" height="400"> </canvas>
     <!-- Tela de jogo -->
     <div id="gameScreen" style="display: none;">
         <h2 id="playerNameDisplay"></h2>
@@ -21,17 +21,25 @@
         <p id="makimaHealthDisplay"></p>
         <button id="attackButton">Atacar</button>
     </div>
+      <div id="loadingScreen">  
+      <img src="laiza/image_chainsaw_man.jpg" alt="Tela de Carregamento">
+    </div>
 
     <!-- Tela de vitória -->
     <div id="victoryScreen" style="display: none;">
         <h2>Você Venceu!</h2>
-        <!-- Conteúdo da tela de vitória -->
+     <img src="laiza/image_victory_1.jpg" alt="Vitória - Imagem 1">
+        <img src="laiza/image_victory_2.jpg" alt="Vitória - Imagem 2">
+        <p>Criado por [laiza.C]</p>
+
     </div>
 
     <!-- Tela de derrota -->
     <div id="defeatScreen" style="display: none;">
         <h2>Você Perdeu!</h2>
-        <!-- Conteúdo da tela de derrota -->
+       <img src="laiza/image_defeat_1.jpg" alt="Derrota - Imagem 1">
+        <img src="laiza/image_defeat_2.jpg" alt="Derrota - Imagem 2">
+        <p>Criado por [laiza.C]</p>
     </div>
 
     <script src="script.js"></script>
